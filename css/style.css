@@ -1,0 +1,337 @@
+@font-face {
+  font-family: 'inter';
+  src: url(assets/fonts/inter.ttf) format("ttf");
+}
+
+@font-face {
+  font-family: 'interLight';
+  src: url(assets/fonts/Inter-Light-slnt=0.ttf) format("ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'inter', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1680px;
+  height: 100vh;
+  margin: 0 150px;
+  position: relative;
+}
+
+.full-width-container {
+  width: 100%;
+  position: relative;
+}
+
+.container {
+  position: relative;
+  /* width: 90%; */
+  margin: 0 150px;
+}
+
+.cta {
+  background: none;
+  padding: 16px 40px;
+  border-radius: 240px;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  display: inline-block;
+}
+
+.blue-cta {
+  background: #2E4FFF;
+  padding: 16px 40px;
+  border-radius: 240px;
+  color: white;
+  font-size: 18px;
+  display: inline-block;
+}
+
+header {
+  height: 80px;
+  background: #050505;
+}
+
+header > .container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header > .container nav {
+  -ms-flex-preferred-size: 550px;
+      flex-basis: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header > .container nav > a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  margin-left: 10px;
+}
+
+header > .container nav > a.blue-cta {
+  padding: 10px 30px;
+  font-size: 16px;
+}
+
+section#hero {
+  height: 700px;
+  background: url(../assets/img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+section#hero::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, right top, from(#030303), to(rgba(3, 3, 3, 0.44)));
+  background: linear-gradient(90deg, #030303 0%, rgba(3, 3, 3, 0.44) 100%);
+}
+
+section#hero .container {
+  height: 100%;
+}
+
+section#hero .content {
+  position: absolute;
+  top: 165px;
+  left: 0;
+}
+
+section#hero .content h2 {
+  font-size: 60px;
+  color: white;
+  line-height: 72px;
+  font-weight: 500;
+  margin: 10px 0 50px 0;
+}
+
+section#hero .content h5 {
+  font-weight: 500;
+  font-size: 24px;
+  color: #FF005C;
+  margin-bottom: 0;
+}
+
+section#hero .content .cta {
+  margin-left: 20px;
+}
+
+section#quote {
+  height: 1042px;
+  background: linear-gradient(109deg, #112ec5 -28%, #d92057 126%);
+}
+
+section#quote .cards {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  top: -80px;
+}
+
+section#quote .cards .box {
+  position: relative;
+  -ms-flex-preferred-size: 420px;
+      flex-basis: 420px;
+  height: 500px;
+  overflow: hidden;
+  -webkit-clip-path: polygon(100% 90%, 100% 0, 0 0, 0 100%, 90% 100%);
+          clip-path: polygon(100% 90%, 100% 0, 0 0, 0 100%, 90% 100%);
+}
+
+section#quote .cards .box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(22, 26, 37, 0.6)), color-stop(50%, rgba(22, 26, 37, 0)));
+  background: linear-gradient(0deg, rgba(22, 26, 37, 0.6) 0%, rgba(22, 26, 37, 0) 50%);
+}
+
+section#quote .cards .box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section#quote .cards .box .text-content {
+  position: absolute;
+  left: 30px;
+  bottom: 35px;
+}
+
+section#quote .cards .box .text-content h5 {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+  color: white;
+}
+
+section#quote .cards .box .text-content p {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFC700;
+}
+
+section#quote .quote {
+  width: 960px;
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 150%;
+  text-align: center;
+}
+
+section#quote .quote p {
+  color: white;
+}
+
+section#quote .quote > div p {
+  font-size: 16px;
+  line-height: 150%;
+}
+
+section#quote .quote > div p:nth-child(3) {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+section#tuneup {
+  height: auto;
+}
+
+section#tuneup .full-width-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section#tuneup .video {
+  width: 800px;
+  height: 800px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: -100px;
+}
+
+section#tuneup .video svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+section#tuneup .video img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section#tuneup .content {
+  width: 680px;
+  margin: 0 150px 0 50px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 100px;
+}
+
+section#tuneup .content h2 {
+  font-size: 60px;
+  color: #050505;
+  line-height: 72px;
+  font-weight: 500;
+}
+
+section#tuneup .content h5 {
+  font-weight: 500;
+  font-size: 24px;
+  color: #2E4FFF;
+}
+
+section#tuneup .content p {
+  font-size: 18px;
+  color: #394356;
+  line-height: 150%;
+}
+
+section#tuneup .content a {
+  background: #FF005C;
+  padding: 16px 40px;
+  border-radius: 240px;
+  color: white;
+  font-size: 18px;
+  display: inline-block;
+  margin-top: 40px;
+}
+
+section#featured h5 {
+  font-weight: 500;
+  font-size: 24px;
+  color: #050505;
+}
+
+section#featured .featured-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section#featured .featured-cards .box {
+  -ms-flex-preferred-size: 420px;
+      flex-basis: 420px;
+  height: 345px;
+}
+/*# sourceMappingURL=style.css.map */
