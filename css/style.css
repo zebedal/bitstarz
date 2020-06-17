@@ -314,6 +314,10 @@ section#tuneup .content a {
   margin-top: 40px;
 }
 
+section#featured {
+  padding: 150px 0;
+}
+
 section#featured h5 {
   font-weight: 500;
   font-size: 24px;
@@ -333,5 +337,151 @@ section#featured .featured-cards .box {
   -ms-flex-preferred-size: 420px;
       flex-basis: 420px;
   height: 345px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+section#featured .featured-cards .box .top-image {
+  height: 250px;
+}
+
+section#featured .featured-cards .box .top-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-clip-path: polygon(3% 0, 58% 0, 100% 5%, 100% 46%, 95% 100%, 43% 100%, 0 96%, 0 50%);
+          clip-path: polygon(3% 0, 58% 0, 100% 5%, 100% 46%, 95% 100%, 43% 100%, 0 96%, 0 50%);
+  border-radius: 50px;
+}
+
+section#featured .featured-cards .box .text-content {
+  margin-top: 15px;
+}
+
+section#featured .featured-cards .box h5 {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+  color: #050505;
+}
+
+section#newsletter {
+  height: 800px;
+  background: url(../assets/img/barbell.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+section#newsletter .container {
+  height: 100%;
+}
+
+section#newsletter .content {
+  width: 811px;
+  position: absolute;
+  top: 210px;
+  left: 0;
+}
+
+section#newsletter .content h2 {
+  font-size: 60px;
+  color: white;
+  line-height: 72px;
+  font-weight: 500;
+  margin: 10px 0 50px 0;
+}
+
+section#newsletter .content h5 {
+  font-weight: 500;
+  font-size: 24px;
+  color: #FF005C;
+  margin-bottom: 0;
+}
+
+section#newsletter .content p {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+section#newsletter .content .subscribe {
+  position: relative;
+  width: 413px;
+  height: 54px;
+  margin-top: 40px;
+}
+
+section#newsletter .content .subscribe input {
+  width: 65%;
+  height: 100%;
+  border-radius: 240px 0 0 240px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  color: #394356;
+  padding: 10px 20px;
+}
+
+section#newsletter .content .subscribe .blue-cta {
+  position: absolute;
+  right: 0;
+  width: 35%;
+  border-radius: 0 240px 240px 0;
+}
+
+section#bottom-cards {
+  padding: 140px 0;
+  background: #050505;
+}
+
+section#bottom-cards .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section#bottom-cards .cards .box {
+  text-align: center;
+  -ms-flex-preferred-size: 420px;
+      flex-basis: 420px;
+  height: 500px;
+  border: 4px solid #2E4FFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 16px;
+  padding: 40px;
+}
+
+section#bottom-cards .cards .box .text-content {
+  margin-top: 60px;
+}
+
+section#bottom-cards .cards .box .card-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+  color: white;
+}
+
+section#bottom-cards .cards .box .card-subtitle {
+  margin-top: 10px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFC700;
+}
+
+section#bottom-cards .cards .box p {
+  margin-top: 20px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: rgba(255, 255, 255, 0.8);
 }
 /*# sourceMappingURL=style.css.map */
