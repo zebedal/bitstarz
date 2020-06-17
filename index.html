@@ -20,7 +20,7 @@
                     <a href="#">About</a>
                     <a href="#">Contact</a>
                     <a href="#">Home</a>
-                    <a class="blue-cta" href="#">Get Started Now</a>
+                    <a class="blue-cta animate" href="#">Get Started Now</a>
                 </nav>
             </div>
         </header>
@@ -29,11 +29,13 @@
         <section id="hero">
             <div class="container">
 
-                <div class="content">
-                    <h5 class="subtitle">Healthy Habits Made Simple</h5>
-                    <h2 class="title">The #1 app fitness & nutrition app</h2>
-                    <a class="blue-cta" href="#">Get Started Now</a>
-                    <a class="cta" href="#">Learn More</a>
+                <div class="content-wrapper">
+                    <div class="content">
+                        <h5 class="subtitle">Healthy Habits Made Simple</h5>
+                        <h2 class="title">The #1 app fitness & nutrition app</h2>
+                        <a class="blue-cta animate" href="#">Get Started Now</a>
+                        <a class="cta" href="#">Learn More</a>
+                    </div>
                 </div>
 
             </div>
@@ -43,30 +45,40 @@
         <section id="quote">
             <div class="container">
                 <div class="cards">
-                    <div class="box">
-                        <img src="assets/img/card1.jpg" alt="">
-                        <div class="text-content">
-                            <h5 class="card-title">Resistance</h5>
-                            <p class="card-subtitle">Push your limits</p>
+
+                    <div class="box-wrapper">
+                        <div class="box">
+                            <img src="assets/img/card1.jpg" alt="">
+                            <div class="text-content">
+                                <h5 class="card-title">Resistance</h5>
+                                <p class="card-subtitle">Push your limits</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="box">
-                        <img src="assets/img/card2.jpg" alt="">
-                        <div class="text-content">
-                            <h5 class="card-title">Supplement Plan</h5>
-                            <p class="card-subtitle">look good, feel good</p>
+
+                    <div class="box-wrapper">
+                        <div class="box">
+                            <img src="assets/img/card2.jpg" alt="">
+                            <div class="text-content">
+                                <h5 class="card-title">Supplement Plan</h5>
+                                <p class="card-subtitle">look good, feel good</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="box">
-                        <img src="assets/img/card3.jpg" alt="">
-                        <div class="text-content">
-                            <h5 class="card-title">Personal Trainers</h5>
-                            <p class="card-subtitle">Get fit quickly</p>
+
+                    <div class="box-wrapper">
+                        <div class="box">
+                            <img src="assets/img/card3.jpg" alt="">
+                            <div class="text-content">
+                                <h5 class="card-title">Personal Trainers</h5>
+                                <p class="card-subtitle">Get fit quickly</p>
+                            </div>
                         </div>
                     </div>
+
                 </div> 
             </div>
-            <div class="quote">
+            <div class="quote anim" data-anim="translateY" data-initial="300" data-end="0">
                 <p>“Brute animals are the most healthy, and they are exposed to all weather, and of men, those are healthiest who are the most exposed.”</p>
                 <br>
                 <div>
@@ -80,14 +92,14 @@
         <!--section tune up-->
         <section id="tuneup">
             <div class="full-width-container">
-                <div class="video">
+                <div class="video anim">
                     <svg class="play-button" width="128" height="128" viewBox="0 0 128 128" fill="none">
-                        <circle cx="64" cy="64" r="64" fill="white"/>
+                        <circle id="play-button-circle" cx="64" cy="64" r="64" fill="white"/>
                         <path d="M50 47.0648C50 43.9556 53.3919 42.0351 56.058 43.6348L84.2834 60.57C86.8727 62.1236 86.8727 65.8764 84.2834 67.43L56.058 84.3652C53.3919 85.9649 50 84.0444 50 80.9352V47.0648Z" fill="#2E4FFF"/>
                         </svg>    
                     <img src="assets/img/zen.png" alt="">
                 </div>
-                <div class="content">
+                <div class="content anim">
                     <h5 class="subtitle">Tune up your workouts</h5>
                     <h2 class="title">The best health & fitness advice online</h2>
                     <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
@@ -99,23 +111,23 @@
         <!--section featured-->
         <section id="featured">
             <div class="container">
-                <h5 class="subtitle">Featured Playlists</h5>
+                <h5 class="subtitle anim">Featured Playlists</h5>
                 <div class="featured-cards">
-                    <div class="box">
+                    <div class="box anim">
                         <div class="top-image"><img src="assets/img/featured1.jpg" alt=""></div>
                         <div class="text-content">
                             <h5 class="card-subtitle">Full Body Training</h5>
                             <p>No Equipment</p>
                         </div>
                     </div>
-                    <div class="box">
+                    <div class="box anim">
                         <div class="top-image"><img src="assets/img/featured2.jpg" alt=""></div>
                         <div class="text-content">
                             <h5 class="card-subtitle">Back, Arms & Chest</h5>
                             <p>Equipment: Weights</p>
                         </div>
                     </div>
-                    <div class="box">
+                    <div class="box anim">
                         <div class="top-image"><img src="assets/img/featured3.jpg" alt=""></div>
                         <div class="text-content">
                             <h5 class="card-subtitle">Let’s Train Together</h5>
@@ -130,7 +142,7 @@
         <section id="newsletter">
             <div class="container">
 
-                <div class="content">
+                <div class="content anim">
                     <h5 class="subtitle">Tune up your workouts</h5>
                     <h2 class="title">Subscribe to our weekly giveaways & newsletters</h2>
                     <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
@@ -148,7 +160,7 @@
             <div class="container">
                 <div class="cards">
 
-                    <div class="box">
+                    <div class="box anim">
                         <img src="assets/img/beginner.svg" alt="">
                         <div class="text-content">
                             <h5 class="card-title">Beginner</h5>
@@ -157,7 +169,7 @@
                         </div>
                     </div>
 
-                    <div class="box">
+                    <div class="box anim">
                         <img src="assets/img/active.svg" alt="">
                         <div class="text-content">
                             <h5 class="card-title">Active</h5>
@@ -166,7 +178,7 @@
                         </div>
                     </div>
 
-                    <div class="box">
+                    <div class="box anim">
                         <img src="assets/img/advanced.svg" alt="">
                         <div class="text-content">
                             <h5 class="card-title">Advanced</h5>
@@ -179,8 +191,56 @@
             </div>
         </section>
 
+        <!--section testimonial-->
+        <section id="testimonial">
+            <div class="container anim">
+
+                <div class="testimonial">
+                    <img src="assets/img/wordpress.svg" alt="">
+                    <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+
+                </div>
+
+                <div class="testimonial">
+                    <img src="assets/img/mention.svg" alt="">
+                    <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+
+                </div>
+
+                <div class="testimonial">
+                    <img src="assets/img/meteor.svg" alt="">
+                    <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+
+                </div>
+
+                <div class="testimonial">
+                    <img src="assets/img/angular.svg" alt="">
+                    <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+
+                </div>
+
+            </div>
+        </section>
+
+        <footer>
+            <p>© Copyright 2020. GetFit. All Rights Reserved.</p>
+        </footer>
+
 
     </div><!-- end of website wrapper-->
-    
+
+    <div class="modal">
+            <svg height="30" width="30" class="close-modal">
+                <line x1="0" y1="0" x2="25" y2="25" style="stroke:#050505;stroke-width:2" />
+                <line x1="0" y1="25" x2="25" y2="0" style="stroke:#050505;stroke-width:2" />
+            </svg>
+       
+        <div class="modal-content">
+            <p>Hello im a blank modal</p>
+        </div>
+
+    </div>
+
+<script src="app.js"></script>
 </body>
 </html>

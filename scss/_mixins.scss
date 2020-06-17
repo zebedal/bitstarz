@@ -4,6 +4,8 @@
     border-radius: 240px;
     color: white;
     display: inline-block;
+    position: relative;
+    overflow: hidden; 
 }
 
 @mixin title($color) {
