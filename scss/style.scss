@@ -39,10 +39,11 @@ a {
     margin: 0 150px;
 }
 .cta {
-    @include cta;
+    @include cta(none);
+    border: 2px solid rgba(255, 255, 255, 0.4);
 }
 .blue-cta {
-    @include blue-cta;
+    @include cta($blue);
 }
 
 //Header and navigation styles
@@ -55,7 +56,7 @@ header{
         justify-content: space-between;
         align-items: center;
         nav {
-            flex-basis: 550px;
+            flex-basis: 650px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -193,6 +194,7 @@ section#tuneup {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            cursor: pointer;
         }
         img {
             width: 100%;
@@ -217,7 +219,7 @@ section#tuneup {
             line-height: 150%;
         }
         a {
-            @include magenta-cta;
+            @include cta($magenta);
             margin-top: 40px;
         }
     }
@@ -325,7 +327,10 @@ section#bottom-cards {
             border: 4px solid #2E4FFF;
             box-sizing: border-box;
             border-radius: 16px;
-            padding: 40px;
+            padding: 30px;
+            img {
+                max-height: 112px ;
+            }
             .text-content {
                 margin-top: 60px;
             }

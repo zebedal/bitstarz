@@ -43,8 +43,8 @@ a {
   padding: 16px 40px;
   border-radius: 240px;
   color: white;
-  border: 2px solid rgba(255, 255, 255, 0.4);
   display: inline-block;
+  border: 2px solid rgba(255, 255, 255, 0.4);
 }
 
 .blue-cta {
@@ -52,7 +52,6 @@ a {
   padding: 16px 40px;
   border-radius: 240px;
   color: white;
-  font-size: 18px;
   display: inline-block;
 }
 
@@ -75,8 +74,8 @@ header > .container {
 }
 
 header > .container nav {
-  -ms-flex-preferred-size: 550px;
-      flex-basis: 550px;
+  -ms-flex-preferred-size: 650px;
+      flex-basis: 650px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -267,6 +266,7 @@ section#tuneup .video svg {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 
 section#tuneup .video img {
@@ -309,7 +309,6 @@ section#tuneup .content a {
   padding: 16px 40px;
   border-radius: 240px;
   color: white;
-  font-size: 18px;
   display: inline-block;
   margin-top: 40px;
 }
@@ -455,7 +454,11 @@ section#bottom-cards .cards .box {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 16px;
-  padding: 40px;
+  padding: 30px;
+}
+
+section#bottom-cards .cards .box img {
+  max-height: 112px;
 }
 
 section#bottom-cards .cards .box .text-content {
