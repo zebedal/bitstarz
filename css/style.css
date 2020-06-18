@@ -430,7 +430,7 @@ section#quote .cards .box .text-content p {
 }
 
 section#quote .quote {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
   font-weight: 500;
   font-size: 40px;
@@ -589,6 +589,7 @@ section#tuneup .content h2 {
   color: #050505;
   line-height: 72px;
   font-weight: 500;
+  margin-top: 20px;
 }
 
 section#tuneup .content h5 {
@@ -601,6 +602,7 @@ section#tuneup .content p {
   font-size: 18px;
   color: #394356;
   line-height: 150%;
+  margin-top: 40px;
 }
 
 section#tuneup .content a {

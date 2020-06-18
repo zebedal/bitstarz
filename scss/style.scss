@@ -291,7 +291,7 @@ section#quote {
         }
     }
     .quote {
-        width: 960px;
+        max-width: 960px;
         margin: 0 auto;
         font-weight: 500;
         font-size: 40px;
@@ -407,6 +407,7 @@ section#tuneup {
         transition: all .5s ease-out;
         h2{
             @include title($dark);
+            margin-top: 20px;
         }
         h5 {
             @include subtitle($blue);
@@ -415,6 +416,7 @@ section#tuneup {
             font-size: $regular-text;
             color: #394356;
             line-height: 150%;
+            margin-top: 40px;
         }
         a {
             /* @include cta($magenta); */
