@@ -1,4 +1,4 @@
-# bitstarz
+# Coding Challenge
 
 <h2>Objectives</h2>
 <p>The challenge was to create a web page from a Figma Layout using no CSS frameworks and little Javascript as possible. For the scope of the challenge I haven't included vendor prefixes for IE, so Chrome or Firefox are advised for compatibility </p>
