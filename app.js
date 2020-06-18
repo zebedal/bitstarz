@@ -5,7 +5,7 @@ this.addEventListener('DOMContentLoaded', () => {
         for(const entry of entries) {
             if(entry.isIntersecting)entry.target.classList.add('intersect');
         }   
-    },{threshold: 0.3});
+    },{threshold: 0});
 
     const elements = document.querySelectorAll('.anim');
     for(const el of elements) {
@@ -31,7 +31,8 @@ this.addEventListener('DOMContentLoaded', () => {
 });
 
 
-    /************solution using dynamic JS and HTML data atributes to get the transform type and values, this way we don't need to use additional CSS classes*******/
+    /************ alternative solution using  JS and HTML data atributes to get the transform type and values, 
+     * this way we don't need to use additional CSS classes*******/
     /* const observer = new IntersectionObserver(function(entries) { 
         for(const entry of entries) {
             if(entry.isIntersecting){
