@@ -388,7 +388,7 @@ section#tuneup {
             transform: translateX(0);
         }
         &:hover #play-button-circle {
-            animation: playButton 2s linear infinite;
+            animation: playButton 1s linear infinite;
         }
         &:hover::before {
             height: 50%;
@@ -438,7 +438,7 @@ section#featured {
     .featured-cards {
         display: flex;
         justify-content: space-between;
-        .box {
+        .box-wrapper {
             flex-basis: 420px;
             height: 345px;
             overflow: hidden;
@@ -448,6 +448,9 @@ section#featured {
             transform: translateY(100px);
             transition: all .5s ease-out;
             cursor: pointer;
+            .box {
+                transition: all .5s ease-in-out;
+            }
             &.intersect {
                 @for $i from 1 through 3 {
                     &:nth-child(#{$i}) {
@@ -457,7 +460,9 @@ section#featured {
                     }
                 }
             }
-            &:hover {
+            &:hover .box {
+                filter: grayscale(1);
+                transform: perspective(800px) rotateY(15deg);
                 opacity: .8;
             }
             .top-image {
@@ -467,7 +472,8 @@ section#featured {
                     height: 100%;
                     object-fit: cover;
                     clip-path: polygon(3% 0, 58% 0, 100% 5%, 100% 46%, 95% 100%, 43% 100%, 0 96%, 0 50%);
-                    border-radius: 50px;  
+                    border-radius: 50px; 
+                    transition: all .5s ease-in-out;
                 }
             }
             .text-content {
