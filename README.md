@@ -19,10 +19,10 @@
 <h2>Animation techniques used</h2>
   <p>I used only CSS animations as required. For performance reasons, and to try to get smooth animations, I tried to change only properties that affect compositing on the browser - transform and opacity are examples of that.</p>
   <ul>
-    <li>3d animations using perspective on parent containers</li>
+    <li>3d animations using perspective on parent containers. The cards on the hero section are a good example of that using rotateY</li>
     <li>hover effects using css pseudo classes for performance</li>
   </ul>
   
 <h2>Final Considerations</h2>
-  <p>I could have used animation on other elements, but I think It wouldn't add up to the project itself. I tried first and foremost, to complete the challenge requirements while producing organized and quality code</p>
+  <p>I could have used animation on other elements, but I think It wouldn't add up to the project itself. I gave some examples of CSS techniques and I tried first and foremost, to complete the challenge requirements while producing organized and quality code</p>
   
