@@ -696,9 +696,7 @@ section#featured .featured-cards .box-wrapper .top-image img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-clip-path: polygon(3% 0, 58% 0, 100% 5%, 100% 46%, 95% 100%, 43% 100%, 0 96%, 0 50%);
-          clip-path: polygon(3% 0, 58% 0, 100% 5%, 100% 46%, 95% 100%, 43% 100%, 0 96%, 0 50%);
-  border-radius: 50px;
+  border-radius: 343px 2000px 373px 1910px / 1478px 358px 2000px 209px;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
