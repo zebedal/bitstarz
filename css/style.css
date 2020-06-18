@@ -332,6 +332,7 @@ section#quote .cards {
           perspective: 400px;
   -webkit-perspective-origin: right;
           perspective-origin: right;
+  margin: 0 -10px;
 }
 
 section#quote .cards .box-wrapper {
@@ -368,11 +369,11 @@ section#quote .cards .box-wrapper:nth-child(3) > .box {
 
 section#quote .cards .box {
   position: relative;
-  -ms-flex-preferred-size: 420px;
-      flex-basis: 420px;
-  height: 500px;
+  margin: 0 10px;
+  height: 100%;
   overflow: hidden;
   opacity: 0;
+  border-radius: 16px;
   -webkit-clip-path: polygon(100% 90%, 100% 0, 0 0, 0 100%, 90% 100%);
           clip-path: polygon(100% 90%, 100% 0, 0 0, 0 100%, 90% 100%);
   -webkit-transform: rotateY(-33deg);
@@ -547,8 +548,7 @@ section#tuneup .video svg {
 section#tuneup .video img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  /* object-fit: cover; */
 }
 
 section#tuneup .video.intersect {
@@ -790,18 +790,17 @@ section#bottom-cards .cards {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0 -10px;
 }
 
 section#bottom-cards .cards .box {
   text-align: center;
-  -ms-flex-preferred-size: 420px;
-      flex-basis: 420px;
-  height: 500px;
   border: 4px solid #2E4FFF;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 16px;
-  padding: 30px;
+  padding: 80px 30px;
+  margin: 0 10px;
   opacity: 0;
   -webkit-transform: translateY(100px);
           transform: translateY(100px);
