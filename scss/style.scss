@@ -477,6 +477,10 @@ section#featured {
             }
             .text-content {
                 margin-top: 15px;
+                p {
+                    color: $blue;
+                    margin-top: 10px;
+                }
             }
             h5 {
                 @include card-title($dark);
