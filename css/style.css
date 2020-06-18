@@ -470,6 +470,8 @@ section#tuneup .full-width-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  overflow-x: hidden;
 }
 
 section#tuneup .video {
@@ -633,12 +635,11 @@ section#featured .featured-cards {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0 -30px;
 }
 
 section#featured .featured-cards .box-wrapper {
-  -ms-flex-preferred-size: 420px;
-      flex-basis: 420px;
-  height: 345px;
+  margin: 0 30px;
   overflow: hidden;
   position: relative;
   text-align: center;
@@ -806,22 +807,25 @@ section#bottom-cards .cards {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 -10px;
+  margin-left: -60px;
 }
 
 section#bottom-cards .cards .box {
+  -ms-flex-preferred-size: 420px;
+      flex-basis: 420px;
   text-align: center;
   border: 4px solid #2E4FFF;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 16px;
   padding: 80px 30px;
-  margin: 0 10px;
+  margin-left: 60px;
   opacity: 0;
   -webkit-transform: translateY(100px);
           transform: translateY(100px);
   -webkit-transition: all .5s ease-out;
   transition: all .5s ease-out;
+  cursor: pointer;
 }
 
 section#bottom-cards .cards .box.intersect:nth-child(1) {
