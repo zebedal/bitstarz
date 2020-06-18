@@ -26,9 +26,7 @@ this.addEventListener('DOMContentLoaded', () => {
         document.body.style.overflow = 'auto';
     });
 
-    //test code
-    const textString = document.querySelector('.textanim').textContent;
-    console.log([...textString])
+  
 
 
 });
