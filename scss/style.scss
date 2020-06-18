@@ -231,7 +231,8 @@ section#quote {
         justify-content: space-between;
         position: relative;
         top: -80px;
-        perspective: 300px;
+        perspective: 400px;
+        perspective-origin: right;
         .box-wrapper {
             transition: transform .5s ease-in-out;
             &:hover {

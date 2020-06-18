@@ -328,8 +328,10 @@ section#quote .cards {
           justify-content: space-between;
   position: relative;
   top: -80px;
-  -webkit-perspective: 300px;
-          perspective: 300px;
+  -webkit-perspective: 400px;
+          perspective: 400px;
+  -webkit-perspective-origin: right;
+          perspective-origin: right;
 }
 
 section#quote .cards .box-wrapper {
